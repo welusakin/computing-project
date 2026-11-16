@@ -5,6 +5,7 @@ build:
 	$(MAKE) -C data-structures-visualizer
 
 verify: build
+	cd task-manager-api && python3 -m pytest -q
 	cd pacman-search-agents && python3 -m unittest discover -s tests -v
 	cd pacman-search-agents && python3 -m pacman_search --compare --goal food
 	printf 'help\nexit\n' | system-file-manager/file-manager
