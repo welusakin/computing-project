@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+system-file-manager/file-manager
+data-structures-visualizer/data-structures-visualizer
+.DS_Store
